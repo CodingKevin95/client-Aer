@@ -87,6 +87,10 @@
 
 @media screen and (max-width: 600px) {
     .hello {
-        width: 94vw;
+        width: 90vw;
+    }
+
+    .boxUp {
+        top: 0px;
     }
 }

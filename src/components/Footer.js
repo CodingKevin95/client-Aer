@@ -13,7 +13,7 @@ function Footer() {
             </div>
             <div className='footerBoxes'>
                 <p className='footerTitle' >Contact</p>
-                <p className='footContent'><div><a href="tel:PHONE_NUM"> 617-505-3600 </a></div><br/><a href="mailto:hello@aernail.com">hello@aernail.com</a></p>
+                <p className='footContent'><div><a href="tel:617-505-3600"> 617-505-3600 </a></div><br/><a href="mailto:hello@aernail.com">hello@aernail.com</a></p>
             </div>
         </div>
     )

@@ -1,13 +1,17 @@
+.Footerpage {
+    background-image: url("../assets/blue-paint.jpg");
+}
+
 .footerBox {
     width: 100%;
     height: auto;
     /* background-color:  rgb(167, 228, 251); */
-    background-image: url("../assets/blue-paint.jpg");
+    /* background-image: url("../assets/blue-paint.jpg"); */
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     color: rgb(0, 72, 114);
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .footContent a {
@@ -17,6 +21,14 @@
 .footerTitle {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.copyright {
+    padding-bottom: 2.5rem;
+}
+
+.copyright a {
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
