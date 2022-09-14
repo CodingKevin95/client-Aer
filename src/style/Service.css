@@ -1,0 +1,110 @@
+.servicePage {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #a7e4fb; */
+    background-image: url("../assets/blue-paint.jpg");
+}
+
+.serviceBtn {
+    margin-top: 1.5rem;
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.134);
+    padding: 1rem;
+    border: 4px solid rgba(0, 0, 0, 0.237);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    10px 12.5px 10px rgba(0, 0, 0, 0.06),
+    15px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    35px 30px 33.4px rgba(0, 0, 0, 0.086),
+    50px 40px 80px rgba(0, 0, 0, 0.12);
+    color: rgb(0, 72, 114);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.serviceBtn:hover {
+    /* background-color: rgb(167, 228, 251); */
+    background-image: url("../assets/blue-paint.jpg");
+    /* color: rgb(0, 72, 114); */
+}
+
+.detailsForBtn {
+    margin-top: 1.5rem;
+    width: 75%;
+    font-size: 1rem;
+    color: rgb(0, 72, 114);
+}
+
+.horizontalScroll {
+    display: flex;
+    height: auto;
+    width: 75%;
+    border: 10px solid rgba(0, 0, 0, 0.237);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    10px 12.5px 10px rgba(0, 0, 0, 0.06),
+    40px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    50px 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    75px 50px 80px rgba(0, 0, 0, 0.12);
+}
+
+.mainSlider {
+    display: flex;
+    flex-direction: row;
+}
+
+.pedicureBox {
+    width: 25vw;
+    color: rgb(0, 72, 114);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.134);
+}
+
+.priceTitle {
+    font-size: 2rem;
+    width: auto;
+    color: rgb(0, 72, 114);
+    border-bottom: 1px solid black;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.manicurePrice {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.10rem;
+    color: rgb(0, 72, 114);
+    text-align: start;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .mainSlider {
+        flex-direction: column;
+    }
+
+    .pedicureBox {
+        width: 75vw;
+    }
+
+    .horizontalScroll {
+        display: flex;
+        /* border: solid black 1px; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 50%;
+    }
+
+    .pedicureBox {
+        align-items: flex-start;
+    }
+}

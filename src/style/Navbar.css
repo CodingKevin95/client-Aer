@@ -1,0 +1,176 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100vw;
+    /* top: 0; */
+    position: fixed; 
+    z-index: 5;
+    /* box-shadow: 2px 7px #0000004a; */
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 50px 80px rgba(0, 0, 0, 0.12)
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ffffffd4; */
+    /* background-image: url("../assets/white-paint.jpg"); */
+    background-image: url("../assets/blue-paint.jpg");
+    opacity: .9;
+    backdrop-filter: blur(3px);
+    height: 4rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    z-index: 5;
+}
+
+.logo {
+    /* background-color: orange; */
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    font-size: 4rem;
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    /* font-weight: bold; */
+}
+
+.contactBox li a {
+    color: black;
+}
+
+.contactIcon {
+    color: #a2b9e1;
+    font-size: 10rem;
+}
+
+.contactIcon:hover{
+    position: relative;
+    color: rgba(0, 0, 0, 0.388);
+    bottom: 5px;
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+}
+
+.mobile-menu {
+    display: none
+}
+
+.nav-menu{
+    display:flex;
+    padding-right: 3rem;
+}
+
+.nav-menu li {
+    padding: 1rem;
+}
+
+.nav-menu li a {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.nav-menu li a:hover {
+    color: rgba(0, 0, 0, 0.388)
+}
+
+@media screen and (max-width: 1200px) {
+    .hamburger{
+        display: block;
+        z-index: 5;
+        padding-right: 3rem;
+     }
+
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+        height: 101vh;
+        /* background-image: linear-gradient(to bottom, #a7e5fbdd, #c6e9ffe5, #dfeeffde, #f3f6ffdf, #ffffffe3); */
+        /* background-color: rgba(255, 255, 255, 0.953); */
+        background-image: url("../assets/blue-paint.jpg");
+        opacity: .9;
+        top: -1rem;
+        right: -100%;
+        transition: .9s ease-in-out;
+        box-shadow:
+        0 -2.8px 2.2px rgba(0, 0, 0, 0.75),
+        0 -6.7px 5.3px rgba(0, 0, 0, 0.4),
+        0 -12.5px 10px rgba(0, 0, 0, 0.295),
+        0 -22.3px 17.9px rgba(0, 0, 0, 0.206),
+        0 -41.8px 33.4px rgba(0, 0, 0, 0.152),
+        0 -100px 80px rgba(0, 0, 0, 0.105);
+        padding-right: 0;
+        backdrop-filter: blur(3px);
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        margin: .5rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu li:hover {
+        width: 100px;
+        transition: .5s ease-in-out;
+    }
+
+    .navbar .slide-right {
+        margin-left: 42.5%;
+        transition: .8s ease-in-out;
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .logo{
+        width: 9rem;
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 495px) {
+    .nav-menu{
+        width: 75%;
+        transition: .8s ease-in-out;
+    }
+
+    .navbar .slide-right {
+        margin-left: 31%;
+    }
+
+    .navbar .container {
+        height: 4rem;
+    }
+
+}
