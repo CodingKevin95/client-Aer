@@ -6,6 +6,7 @@
     flex-direction: column;
     /* background-image: url("../assets/white-paint.jpg"); */
     background-color: rgb(248, 248, 237);
+    /* background-image: url("../assets/random.jpg"); */
 }
 
 .sloganBox {
@@ -14,12 +15,11 @@
     0 2.8px 2.2px rgba(0, 0, 0, 0.321),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     10px 12.5px 10px rgba(0, 0, 0, 0.06),
-    40px 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    50px 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    75px 50px 80px rgba(0, 0, 0, 0.12);
+    15px 1.3px 17.9px rgba(0, 0, 0, 0.072),
+    20px 1px 33.4px rgba(0, 0, 0, 0.086),
+    25px 50px 60px rgba(0, 0, 0, 0.12);
     padding: .5rem;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.359);
     border: 5px solid rgba(0, 0, 0, 0.237);
 }
 
@@ -32,16 +32,16 @@
     text-decoration: underline;
     font-size: 3rem;
     font-family: monospace;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     padding: 0;
     margin: 0;
 }
 .animatedText {
-    background: linear-gradient(to right, #9b9bf8, #92cdf5 , #9df39d, #f4b5d4, #a4a4f2);
+    background: linear-gradient(to right, #0000ff, #0099ff , #00ff00, #ff0080, #0000ff, orange);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 15s ease-in-out infinite;
+    animation: rainbow_animation 7.5s ease-in-out infinite;
     background-size: 400% 100%;
 }
 
@@ -175,4 +175,11 @@
     height: 22px;
     top: -2px;
     left: 13px;
+  }
+
+  @media screen and (max-width: 495px) {
+    .text {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
   }

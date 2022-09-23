@@ -28,6 +28,7 @@ a {
     /* background-color: #ffffffd4; */
     /* background-image: url("../assets/white-paint.jpg"); */
     background-image: url("../assets/blue-paint.jpg");
+    /* background-color: rgb(254, 254, 157); */
     opacity: .9;
     backdrop-filter: blur(3px);
     height: 4rem;
@@ -111,6 +112,7 @@ a {
         /* background-image: linear-gradient(to bottom, #a7e5fbdd, #c6e9ffe5, #dfeeffde, #f3f6ffdf, #ffffffe3); */
         /* background-color: rgba(255, 255, 255, 0.953); */
         background-image: url("../assets/blue-paint.jpg");
+        /* background-color: rgb(254, 254, 157); */
         opacity: .9;
         top: -1rem;
         right: -100%;
@@ -123,7 +125,7 @@ a {
         0 -41.8px 33.4px rgba(0, 0, 0, 0.152),
         0 -100px 80px rgba(0, 0, 0, 0.105);
         padding-right: 0;
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(10px);
     }
 
     .active {

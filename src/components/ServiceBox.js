@@ -3,16 +3,20 @@ import Manicure from './Manicure'
 import Pedicure from './Pedicure'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Waxing from './Waxing'
+import ManicureCRUD from './ManicureCRUD'
+import PedicureCRUD from './PedicureCRUD'
+import WaxCRUD from './WaxCRUD'
 
 function ServiceBox() {
     return (
         <div className="horizontalScroll">
             <div className='mainSlider'>
-            {/* <MdChevronLeft className='slider-icon left' size={'3rem'}/> */}
-            <Manicure />
-            <Pedicure />
-            <Waxing />
-            {/* <MdChevronRight className='slider-icon right' size={'3rem'}/> */}
+            <ManicureCRUD />
+            {/* <Manicure /> */}
+            <PedicureCRUD />
+            {/* <Pedicure /> */}
+            {/* <Waxing /> */}
+            <WaxCRUD />
             </div>
         </div>
     )
