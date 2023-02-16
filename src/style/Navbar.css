@@ -17,7 +17,7 @@ a {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
     0 50px 80px rgba(0, 0, 0, 0.12)
 }
 
@@ -39,6 +39,7 @@ a {
     align-items: center;
     margin: 1rem;
     z-index: 5;
+    color: rgb(0, 72, 114);
 }
 
 .logo {
@@ -54,7 +55,7 @@ a {
 }
 
 .contactBox li a {
-    color: black;
+    color: rgb(0, 72, 114);
 }
 
 .contactIcon {
@@ -87,7 +88,7 @@ a {
 }
 
 .nav-menu li a {
-    color: black;
+    color: rgb(0, 72, 114);
     font-size: 1.3rem;
 }
 
@@ -111,9 +112,10 @@ a {
         height: 101vh;
         /* background-image: linear-gradient(to bottom, #a7e5fbdd, #c6e9ffe5, #dfeeffde, #f3f6ffdf, #ffffffe3); */
         /* background-color: rgba(255, 255, 255, 0.953); */
-        background-image: url("../assets/blue-paint.jpg");
+        /* background-image: url("../assets/blue-paint.jpg"); */
+        background-color: rgb(248, 248, 237);
         /* background-color: rgb(254, 254, 157); */
-        opacity: .9;
+        opacity: 1;
         top: -1rem;
         right: -100%;
         transition: .9s ease-in-out;

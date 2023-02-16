@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../style/Popup.css"
 import { urlFor, client } from '../client'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 function Popup(props) {
 
@@ -15,7 +16,7 @@ function Popup(props) {
     }, [])
 
     return(props.trigger) ? (
-        <div className="popup">
+        <motion.div transition={{duration: 1}} animate={{ opacity: 1}} initial={{opacity: 0}} className="popup">
             <div className="popup-inner">
             {abouts.map((about, index) =>  (
             <div key={index} className='manicurePrice'>
@@ -26,13 +27,13 @@ function Popup(props) {
                 </p>
             </div>
             ))}
-                <a href='https://go.booker.com/location/AerNailBar/service-menu' target="_blank" rel="noreferrer">
-                <button className='serviceBtnPopup'>Appointments</button>
+                <a href='#book-now' rel="noreferrer">
+                <button className='serviceBtnPopup' onClick={() => props.setTrigger(false)}>Appointments</button>
                 </a>
                 <div className="close-btn" onClick={() => props.setTrigger(false)}><FaTimes size={20} style={{color: 'black'}}/></div>
                 { props.childern }
             </div>
-        </div>
+        </motion.div>
     ) : "";
 }
 

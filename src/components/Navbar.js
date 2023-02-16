@@ -32,7 +32,7 @@ const handleNav = () => {
 
                 </ul>
                 <div className='hamburger' onClick={handleNav}>
-                    {nav ? (<FaTimes size={20} style={{color: 'black'}}/>) : (<FaBars size={20} style={{color: 'black'}}/>)}
+                    {nav ? (<FaTimes size={20} style={{color: 'rgb(0, 72, 114)'}}/>) : (<FaBars size={20} style={{color: 'rgb(0, 72, 114)'}}/>)}
                 </div>                
             </div>
 

@@ -1,4 +1,6 @@
 import '../style/Footer.css'
+import { Routes, Route, NavLink } from "react-router-dom"
+import Careerpage from '../pages/Careerpage'
 
 function Footer() {
     return (
@@ -9,11 +11,18 @@ function Footer() {
             </div>
             <div className='footerBoxes'>
                 <p className='footerTitle' > Hours</p>
-                <p className='footContent'><div>Monday - Friday: 9:30 - 7:00</div><br/><p>Saturday: 9:00 - 6:00</p><br/>Sunday: Closed</p>
+                <p className='footContent'><div>Monday - Friday: 9:30 - 7:00</div><br/><p>Saturday: 9:00 - 6:00</p><br/>Sunday: 10:00 - 4:00</p>
             </div>
             <div className='footerBoxes'>
                 <p className='footerTitle' >Contact</p>
-                <p className='footContent'><div><a href="tel:617-505-3600"> 617-505-3600 </a></div><br/><a href="mailto:hello@aernail.com">hello@aernail.com</a></p>
+                <p className='footContent'><div><a href="tel:617-505-3600"> 617-505-3600 </a></div><br/><a href="mailto:hello@aernailbar.com">hello@aernailbar.com</a></p>
+                {/* <Routes>
+                   <Route path="/career" element={<Careerpage />}/> 
+                </Routes> */}
+                {/* <p>Career</p> */}
+                <NavLink to="/career" style={{fontSize:"1rem"}}>
+                    Careers
+                </NavLink>
             </div>
         </div>
     )

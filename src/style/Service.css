@@ -1,5 +1,5 @@
 .servicePage {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     flex-direction: column;
     /* background-color: #a9e4f9; */
     background-image: url("../assets/blue-paint.jpg");
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     padding-bottom: 3.5rem;
 }
 
@@ -37,9 +37,10 @@
 
 .detailsForBtn {
     margin-top: 1.5rem;
-    width: 75%;
+    width: 40%;
     font-size: 1rem;
     color: rgb(0, 72, 114);
+    letter-spacing: 1.5px;
 }
 
 .horizontalScroll {
@@ -52,8 +53,7 @@
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     10px 12.5px 10px rgba(0, 0, 0, 0.06),
     15px 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    20px 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    25px 50px 80px rgba(0, 0, 0, 0.12);
+    25px 50px 80px rgba(0, 0, 0, 0.10);
 }
 
 .mainSlider {
@@ -108,6 +108,22 @@
     background-color: orange;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 72, 114);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 72, 114);
+}
+
 @media screen and (max-width: 1200px) {
     .mainSlider {
         flex-direction: column;
@@ -122,6 +138,13 @@
         /* border: solid black 1px; */
         overflow-y: scroll;
         overflow-x: hidden;
-        height: 50%;
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+    .detailsForBtn {
+        width: 85%;
+        color: rgb(0, 72, 114);
+        letter-spacing: 1px;
     }
 }

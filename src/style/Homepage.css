@@ -6,11 +6,15 @@
     flex-direction: column;
     /* background-image: url("../assets/white-paint.jpg"); */
     background-color: rgb(248, 248, 237);
-    /* background-image: url("../assets/random.jpg"); */
+    /* background-image: url("../assets/manicure.jpg"); */
+    /* background-image: url("../assets/try.jpg"); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .sloganBox {
-    /* background-color: rgba(96, 96, 96, 0.482); */
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.321),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -21,6 +25,9 @@
     padding: .5rem;
     border-radius: 5px;
     border: 5px solid rgba(0, 0, 0, 0.237);
+    background-color: rgb(248, 248, 237);
+    z-index: 1;
+    position: absolute;
 }
 
 .sloganSentence {
@@ -32,9 +39,11 @@
     text-decoration: underline;
     font-size: 3rem;
     font-family: monospace;
+    /* font-family: 'Shrikhand', cursive; */
     letter-spacing: 2px;
     padding: 0;
     margin: 0;
+    /* font-weight: bold; */
 }
 .animatedText {
     background: linear-gradient(to right, #0000ff, #0099ff , #00ff00, #ff0080, #0000ff, orange);
@@ -55,131 +64,77 @@
     }
 }
 
-.drop {
-    /* background: white; */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    margin: 40px;
-    height: 50px;
-    width: 14px;
-    position: absolute;
-    /* z-index: 10; */
-    bottom: -93px;
-    left: 250px;
-  }
-  
-  .drop::before,
-  .drop::after {
-    content: '';
-    position: absolute;
-    /* background: white; */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    border-radius: 50%;
-  }
-  
-  .drop::before {
-    width: 30px;
-    height: 30px;
-    top: -25px;
-    left: -8px;
-  }
-  
-  .drop::after {
-    width: 17px;
-    height: 20px;
-    top: 40px;
-    left: -1.4px;
-  }
-  
-  .gaps::before,
-  .gaps::after {
-    content: '';
-    position: absolute;
-    /* background:  rgb(167, 228, 251); */
-    background-image: url("../assets/blue-paint.jpg");
-    border-radius: 50%;
-    /* z-index: 10; */
-  }
-  
-  .gaps::before {
-    width: 22px;
-    height: 48px;
-    top: -.5px;
-    left: -17.5px;
-  }
-  
-  .gaps::after {
-    width: 22px;
-    height: 46px;
-    top: 0.7px;
-    left: 8.74px;
-  }
+.manicurephoto {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 200px;
+  opacity: .75;
+  position: sticky;
+  right: 65%;
+  top: 20%;
+}
 
-  .drop2 {
-    /* background: white; */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    margin: 40px;
-    height: 20px;
-    width: 14px;
-    position: absolute;
-    /* z-index: 10; */
-    bottom: -62.75px;
-    right: 250px;
-  }
-  
-  .drop2::before,
-  .drop2::after {
-    content: '';
-    position: absolute;
-    /* background: white; */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    border-radius: 50%;
-  }
-  
-  .drop2::before {
-    width: 30px;
-    height: 30px;
-    top: -25px;
-    left: -7px;
-  }
-  
-  .drop2::after {
-    width: 17px;
-    height: 20px;
-    top: 9px;
-    left: -1.4px;
-  }
-  
-  .gaps2::before,
-  .gaps2::after {
-    content: '';
-    position: absolute;
-    /* background:  rgb(167, 228, 251); */
-    background-image: url("../assets/blue-paint.jpg");
-    border-radius: 50%;
-    /* z-index: 10; */
-  }
-  
-  .gaps2::before {
-    width: 22px;
-    height: 22px;
-    top: -3px;
-    left: -21px;
-  }
-  
-  .gaps2::after {
-    width: 22px;
-    height: 22px;
-    top: -2px;
-    left: 13px;
-  }
+.manicurephoto2 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 200px;
+  opacity: .75;
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+}
+.manicurephoto3 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 200px;
+  opacity: .75;
+  position: absolute;
+  left: 75%;
+  bottom: 17rem;
+}
 
-  @media screen and (max-width: 495px) {
+.player-holder{
+  height:350px;
+  max-width:650px;
+  background:blue;
+  text-align: center;
+}
+.player-thumb{
+  width: 15rem;
+  height: 15rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url("../assets/manicure.jpg");
+  background-size: cover;
+  position: absolute;
+  left: 10rem;
+  top: 9rem;
+}
+
+  @media screen and (max-width: 1000px) {
     .text {
       font-size: 2rem;
       letter-spacing: 1px;
+    }
+
+    .player-thumb{
+      width: 150px;
+      height: 150px;
+      left: 10rem;
+      top: 9rem;
+    }
+
+    .manicurephoto2 {
+      height: 10rem;
+      width: 10rem;
+      left: 13rem;
+      top: 60%;
+    }
+
+    .manicurephoto3 {
+      height: 10rem;
+      width: 10rem;
+      left: 1rem;
+      top: 28rem;
     }
   }

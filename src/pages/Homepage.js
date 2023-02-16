@@ -5,12 +5,13 @@ function Homepage() {
     return (
         <div className="homepage" id='home'>
             <HeroBanner />
-            {/* <div className="drop">
-                <div className="gaps"></div>
+            <div className="play-holder">
+                <div className="player-thumb">
+                </div>
             </div>
-            <div className="drop2">
-                <div className="gaps2"></div>
-            </div> */}
+            {/* <img className="manicurephoto" src={require("../assets/manicure.jpg")} /> */}
+            <img className="manicurephoto2" src={require("../assets/try.jpg")} />
+            <img className="manicurephoto3" src={require("../assets/try2.jpg")} />
         </div>
     )
 }
