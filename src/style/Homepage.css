@@ -1,57 +1,98 @@
 .homepage {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    /* background-image: url("../assets/manicure.jpg"); */
-    /* background-image: url("../assets/try.jpg"); */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    align-items: end;
     background-size: cover;
+    background-position: right 10% bottom 10%;
+    background-attachment: fixed;
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/5ad6768d55b02c9e4181a8ea/1652471883394-40RJ9NUFTFFN9J8KNMYH/WIDE.jpg"); */
+    background-image: url(../assets/frontImg.jpg);
+}
+
+.appointmentSection{
+  width: 100%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.appointmentSectionButton {
+  background-color: transparent;
+  border: 1px white solid;
+  background-color: rgb(159, 136, 112);
+  font-size: .8em;
+  font-family: 'Roboto Serif', serif;
+  color: white;
+  border-radius: 20px;
+  padding: 10%;
+  cursor: pointer;
+  margin-bottom: 5%;
+  width: 150px;
+}
+
+/* .introBox {
+  display: flex;
+  width: 60vw;
+  align-items: center;
 }
 
 .sloganBox {
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    10px 12.5px 10px rgba(0, 0, 0, 0.06),
-    15px 1.3px 17.9px rgba(0, 0, 0, 0.072),
-    20px 1px 33.4px rgba(0, 0, 0, 0.086),
-    25px 50px 60px rgba(0, 0, 0, 0.12);
-    padding: .5rem;
-    border-radius: 5px;
-    border: 5px solid rgba(0, 0, 0, 0.237);
-    background-color: rgb(248, 248, 237);
-    z-index: 1;
-    position: absolute;
+    width: 75%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .sloganSentence {
     font-size: 1.1rem;
+    
 }
 
 .text {
-    text-align: center;
-    text-decoration: underline;
+    text-align: start;
     font-size: 3rem;
-    font-family: monospace;
-    /* font-family: 'Shrikhand', cursive; */
     letter-spacing: 2px;
     padding: 0;
-    margin: 0;
-    /* font-weight: bold; */
+    z-index: 2;
+    font-family: 'Roboto Serif', serif;
 }
 .animatedText {
-    background: linear-gradient(to right, #0000ff, #0099ff , #00ff00, #ff0080, #0000ff, orange);
+    background: linear-gradient(to right, #0000ffb0, #0099ffb0 , #00ff00b0, #ff0080b0, #0000ffb0, rgba(255, 166, 0, 0.728));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 7.5s ease-in-out infinite;
+    animation: rainbow_animation 10s ease-in-out infinite;
     background-size: 400% 100%;
+    margin: 0;
+} */
+
+/* .heroButton {
+  display: flex;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.callToAction {
+  text-align: start;
+  font-size: .9rem;
+  color: white;
+  font-family: 'Roboto Serif', serif;
+  z-index: 1;
+}
+
+.serviceBtn2 {
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto Serif', serif;
+  font-size: .9rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
 }
 
 @keyframes rainbow_animation {
@@ -62,79 +103,76 @@
     50% {
         background-position: 100% 0;
     }
+} */
+
+/* .introPhoto1 {
+  width: 250px;
+  height: 210px;
+  position: relative;
+  opacity: .9;
+  bottom: -100px;
+  left: 75px;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+	-webkit-mask-size: cover; 
 }
 
-.manicurephoto {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 200px;
-  opacity: .75;
-  position: sticky;
-  right: 65%;
-  top: 20%;
-}
+.introPhoto2 {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 0px;
+  right: 75px;
+  opacity: .8;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+	-webkit-mask-size: cover; 
+} */
 
-.manicurephoto2 {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 200px;
-  opacity: .75;
+/* .handLogo {
   position: absolute;
-  left: 50%;
-  bottom: 2rem;
-}
-.manicurephoto3 {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 200px;
-  opacity: .75;
-  position: absolute;
-  left: 75%;
-  bottom: 17rem;
-}
-
-.player-holder{
-  height:350px;
-  max-width:650px;
-  background:blue;
-  text-align: center;
-}
-.player-thumb{
-  width: 15rem;
-  height: 15rem;
-  display: inline-block;
-  border-radius: 50%;
-  background-image: url("../assets/manicure.jpg");
-  background-size: cover;
-  position: absolute;
-  left: 10rem;
-  top: 9rem;
-}
+  right: -85px;
+  bottom : -27px;
+  width: 40vw;
+  height: 40vw;
+  border: none;
+} */
 
   @media screen and (max-width: 1000px) {
+    /* .introBox {
+      width: 80vw;
+    }
+
     .text {
-      font-size: 2rem;
+      font-size: 3rem;
       letter-spacing: 1px;
     }
 
-    .player-thumb{
-      width: 150px;
-      height: 150px;
-      left: 10rem;
-      top: 9rem;
+    .callToAction {
+      font-size: .9rem;
+      width: 70%;
     }
 
-    .manicurephoto2 {
-      height: 10rem;
-      width: 10rem;
-      left: 13rem;
-      top: 60%;
+    .serviceBtn2 {
+      font-size: .9rem;
+      font-weight: 1000;
     }
 
-    .manicurephoto3 {
-      height: 10rem;
-      width: 10rem;
-      left: 1rem;
-      top: 28rem;
+    .callToAction {
+      font-size: .9rem;
+    }
+
+    .appointmentSectionButton {
+      font-size: .9em;
+    } */
+  }
+
+  @media screen and (max-width: 820px) {
+    .homepage {
+      background-attachment: local;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .homepage {
+      /* height: 65vh; */
     }
   }

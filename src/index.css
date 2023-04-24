@@ -5,7 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* .line-container {
+  position: fixed;
+  top: 35%;
+  left: 37%;
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 5000;
+  opacity: .4;
+}
+
+svg {
+  display: inline-block;
+  height: 100%;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

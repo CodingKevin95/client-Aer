@@ -4,16 +4,24 @@ import Portfolio from './Portfolio';
 import Service from './Services';
 import Footerpage from './Footerpage';
 import { motion } from 'framer-motion'
+import About from './About';
+import Appointments from './Appointment';
 
 function Mainpage() {
     return (
-        <motion.div transition={{duration: 1}} animate={{ opacity: 1}} initial={{opacity: 0}}>
+        <div>
+        {/* <motion.div transition={{duration: 1}} animate={{ opacity: 1}} initial={{opacity: 0}}> */}
             <Navbar />
             <Homepage />
-            <Service />
+            {/* <Appointments /> */}
+            {/* <About /> */}
+            <motion.div transition={{duration: 1}} animate={{ opacity: 1}} initial={{opacity: 0}}>
+                <Service />
+            </motion.div>
             <Portfolio />
             <Footerpage />
-    </motion.div>
+        {/* </motion.div> */}
+        </div>
     )
 }
 

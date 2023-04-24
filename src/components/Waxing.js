@@ -1,17 +1,45 @@
 import '../style/Service.css'
 
 function Waxing() {
+
+    let waxingService = [
+        {
+            serviceName: "Chin",
+            price: "15"
+        },
+        {
+            serviceName: "Brows",
+            price: "20"
+        },
+        {
+            serviceName: "Bikini",
+            price: "40"
+        },
+        {
+            serviceName: "Full Arms",
+            price: "50"
+        },
+        {
+            serviceName: "Brazilian",
+            price: "75"
+        },
+        {
+            serviceName: "Full Legs",
+            price: "85"
+        },
+    ]
+
     return (
         <div className="pedicureBox">
             <p className='priceTitle'>Waxing</p>
             <div className='manicurePrice'>
-                <p>Chin | 15</p>
-                <p>Brows | 20</p>
-                <p>Brows | 23</p>
-                <p>Bikini | 40</p>
-                <p>Full Arms | 50</p>
-                <p>Brazilian | 75</p>
-                <p>Full Legs | 85</p>
+            { waxingService.map((service) => {
+                    return (
+                        <div class="services-card">
+                            <p class="services-card">{service.serviceName} || {service.price}</p>
+                        </div>
+                    );
+                }) }
             </div>
         </div>
     )

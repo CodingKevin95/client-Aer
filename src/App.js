@@ -24,6 +24,8 @@ function App() {
 
   return (
     <div className="App">
+      {/* <img className="mainBackGround" src={require("./assets/bamboo.png")}></img> */}
+      {/* <img className="mainBackGround2" src="https://images.squarespace-cdn.com/content/v1/5ad6768d55b02c9e4181a8ea/1652471883394-40RJ9NUFTFFN9J8KNMYH/WIDE.jpg"></img> */}
       <Helmet>
           <meta charSet="utf-8" />
           <title>Aer</title>
@@ -38,7 +40,7 @@ function App() {
           <Portfolio />
           <Footerpage /> */}
           <Routes>
-            <Route path="/" element={<Mainpage />}/> 
+            <Route path="/" element={<Mainpage />}/>
             <Route path="/career" element={<Careerpage />}/>
             <Route path="/appointment" element={<AppointmentPolicy />}/> 
           </Routes>

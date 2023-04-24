@@ -6,81 +6,125 @@
     align-items: center;
     flex-direction: column;
     font-size: 1.1rem;
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
+    padding-top: 10%;
+    /* background-color: rgba(103, 59, 9, 0.367);
+    backdrop-filter: blur(5px); */
+    font-family: 'Roboto Serif', serif;
 }
 
-.hello {
-    width: 70vw;
+.topPortfolioSection {
+    width: 80%;
+    margin-bottom: 5%;
+    text-align: start;
+    /* color: white; */
 }
 
-.boxOut {
-    /* background-color: rgb(255, 255, 255); */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    width: 70%;
-    height: 3rem;
-    z-index: 1;
-    bottom: 10px;
-    position: absolute;
-    border-radius: 5px;
+.portfolioLine {
+    border-top: 1px black solid;
 }
 
-.boxUp {
-    /* background-color: rgb(255, 255, 255); */
-    /* background-image: url("../assets/white-paint.jpg"); */
-    background-color: rgb(248, 248, 237);
-    width: 90%;
-    height: 2.5rem;
-    z-index: 1;
-    top: 10px;
-    position: absolute;
-    color: rgb(0, 72, 114);
-    border-radius: 5px;
-    padding-top: 3rem;
+.servicePortfolioTitle {
+    margin-top: 2%;
+    font-size: 1rem;
 }
 
-.test {
+.pinterestBox {
+    width: 75vw;
+    height: 65%;
+    overflow-y: auto;
     position: relative;
-    padding-top: 3rem;
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.232),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.029),
-    10px 12.5px 10px rgba(0, 0, 0, 0.06),
-    20px 15px 17.9px rgba(0, 0, 0, 0.072),
-    35px 20px 33.4px rgba(0, 0, 0, 0.086),
-    50px 30px 100px rgba(0, 0, 0, 0.12);
-    border-radius: 5px;
-    border: 5px solid rgba(0, 0, 0, 0.204);
-    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(225px, 100%/3)), 1fr));
+    grid-auto-rows: 10px;
+    display: grid;
     justify-content: center;
+    background-color: rgb(159, 136, 112);
+    padding: 1%;
+    border: 10px solid rgba(103, 59, 9, 0);
+    border-radius: 1%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    10px 12.5px 10px rgba(0, 0, 0, 0.06),
+    15px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    17px 25px 40px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(5px);
+    max-width: 1000px;
+}
+
+.bounding-box {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     /* -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="85" height="80"/></g></svg>'); 
+     -webkit-mask-size: cover;  */
+}
+
+.bounding-box-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .porfolioBanner {
-    padding-top: 4rem;
-    width: 70vw;
-    color: rgb(0, 72, 114);
+     display: flex;
+     justify-content: center;
+     margin-top: 2%;
+}
+.contactForNailArt {
+    width: 60%;
+    color: black;
+    font-size: .85rem;
+    /* letter-spacing: .5px; */
+    font-family: 'Roboto Serif', serif;
 }
 
-.porfolioBanner a {
-    color: rgb(0, 72, 114);
-}
-
-/* .porfolioBanner a:hover {
-    font-size: 1.3rem;
-} */
-
-.enlargeLink:hover {
-    /* font-size: 1.5rem; */
+.enlargeLink {
+    color: black;
+    border-bottom: 1px solid black;
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
-    .hello {
-        width: 90vw;
+.bounding-box {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .pinterestBox {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(200px, 50%/3)), 1fr));
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topPortfolioSection {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
     }
 
-    .boxUp {
-        top: 0px;
+    .servicePortfolioTitle {
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolioPage {
+        padding-top: 13%;
+    }
+
+    .pinterestBox {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(175px, 50%/2)), 1fr));
+    }
+
+    .contactForNailArt {
+        width: 60%;
     }
 }

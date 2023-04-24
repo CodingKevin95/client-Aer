@@ -43,6 +43,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDXBCNSYD9"></script>
 <script>
@@ -65,6 +69,31 @@
     <title>React App</title>
   </head>
   <body>
+
+    <!-- <div class="line-container">
+     
+      <svg viewBox="0 0 761 737" fill="none" preserveAspectRatio="xMidY meet">
+        <path d="M293 2L330 12L350 2H379H409H447L476 12L501 24L545 39L600 54L631 67L655 96L669 107L677 126L669 144L655 160H641L617 169L600 175H555H533L518 182L491 197H470L461 230L447 251L430 271L416 280L403 289L398 309L403 322L416 332L447 346L476 364L507 380H518L550 374L562 364L577 346V332H545H507L495 322L484 309V289L491 271L512 256L524 241L538 230L555 223L577 216H641H669L699 223L716 230L728 245L741 262L759 289L753 309L741 326L699 339H623L617 364L600 385L577 402L562 412L550 426L538 432L545 450V474L538 504L524 531L507 556H623V575L617 589L600 597L585 602L577 631L571 655L562 678V698L550 717L538 730L524 735H280L256 730L232 717L223 698L217 670L214 647L201 611L192 602L178 597L164 589L159 575V556H280L350 504L287 496L256 484L223 464L192 432L170 385H56L20 380L2 364V346L20 326L43 316L34 309L26 300V280L43 262L82 241L124 237L178 245L192 241H214L256 245L293 262L324 289L330 280V271V256L315 237L307 223L299 204L293 189H164L112 182L87 175L73 160L61 144V126L66 107L87 85L124 67L136 54L149 39L170 24L192 12L217 7L246 2H293Z" stroke="#FF0000" stroke-width="3"/>
+      </svg>
+    </div>
+
+    <script>
+      let path = document.querySelector('path')
+      let pathLength = path.getTotalLength()
+
+      path.style.strokeDasharray = pathLength + ' ' + pathLength;
+
+      path.style.strokeDashoffset = pathLength;
+
+      window.addEventListener('scroll', () => {
+        let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+        let drawLength = pathLength * scrollPercentage;
+
+        path.style.strokeDashoffset = pathLength - drawLength;
+      })
+    </script> -->
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!-- <div

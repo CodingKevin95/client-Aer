@@ -1,0 +1,114 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    font-family: 'Roboto Serif', serif;
+    padding-bottom: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.topAboutSection {
+    /* border-top: 1px white solid; */
+    width: 80%;
+    margin-bottom: 5%;
+    text-align: start;
+    color: black;
+}
+
+.aboutLine {
+    border-top: 1px black solid;
+}
+
+.serviceAboutTitle {
+    margin-top: 2%;
+    /* font-weight: 600; */
+    font-size: 1rem;
+}
+
+.aboutDetails {
+    display: flex;
+}
+
+.leftSide {
+    width: 50%;
+}
+
+.rightSide {
+    width: 50%;
+}
+
+.rightSideAbout {
+    width: 80%;
+    text-align: start;
+}
+
+.introPhoto1 {
+    width: 250px;
+    height: 210px;
+    position: relative;
+    opacity: .9;
+    bottom: -100px;
+    left: 75px;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+    -webkit-mask-size: cover; 
+  }
+  
+  .introPhoto2 {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 0px;
+    right: 75px;
+    opacity: .8;
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>'); 
+    -webkit-mask-size: cover; 
+  }
+
+@media screen and (max-width: 800px) {
+    .about {
+        padding-bottom: 0%;
+        padding-top: 20%;
+    }
+
+    .topAboutSection {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .serviceAboutTitle {
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+
+    .aboutDetails {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0%;
+    }
+
+    .rightSide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftSide {
+        height: min-content;
+    }
+
+    .introPhoto1 {
+        width: 200px;
+        height: 160px;
+        top: 0;
+    }
+      
+    .introPhoto2 {
+        width: 200px;
+        height: 200px;
+        bottom: 100px;
+        right: 25px;
+    }
+  }

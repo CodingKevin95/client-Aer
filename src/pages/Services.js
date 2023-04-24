@@ -1,25 +1,32 @@
 import ServiceBox from '../components/ServiceBox'
 import '../style/Service.css'
 import { Routes, Route, NavLink } from "react-router-dom"
+import TestingPedicure from '../components/TestingPedicure'
+import TestingManicure from '../components/TestingManicure'
+import TestingWaxing from '../components/TestingWaxing'
 
 function Service() {
 
     return (
         <div className="servicePage" id="service">
-            <ServiceBox />
-            {/* <div className='detailsForBtn'>
-                <NavLink to="/appointment" style={{fontSize:"1rem"}}>
-                    Appointment Policy
-                </NavLink>
-            </div> */}
-            <a href='#book-now' rel="noreferrer">
-                <button className='serviceBtn'>Appointments</button>
-            </a>
-            <a href='https://blvd.me/aer-nailbar/gift-cards' rel="noreferrer">
-                <button className='serviceBtn'>Gift Card</button>
-            </a>
+            <div className='topServiceSection'>
+                <div className='line'></div>
+                <div className='serviceSectionTitle'>Our Services</div>
+            </div>
+            {/* <ServiceBox /> */}
+            <TestingManicure />
+            <TestingPedicure />
+            <TestingWaxing />
+            {/* <div className='serviceBtnSection'> */}
+                <a href='#book-now' rel="noreferrer">
+                    <button className='serviceBtn'>Appointments</button>
+                </a>
+                <a href='https://blvd.me/aer-nailbar/gift-cards' rel="noreferrer">
+                    <button className='serviceBtn'>Gift Card</button>
+                </a>
+            {/* </div>     */}
             <div className='detailsForBtn'>
-                <NavLink to="/appointment" style={{fontSize:"1rem"}}>
+                <NavLink className='detailsForBtn' to="/appointment">
                     Appointment Policy
                 </NavLink>
             </div>

@@ -5,7 +5,10 @@ function AppointmentPolicy() {
     return (
         <div className="careerpage">
             <div className="careerbox">
-            <NavLink className="backBtn" to="/">aer.</NavLink>
+            <div className="backBtnBox">
+                    <NavLink className="backBtn" to="/">aer.</NavLink>
+                    <div className='lineAer2'></div>
+                </div>
                 <h1>Cancelation</h1>
                 <p>
                     We understand that sometimes your schedule may change. If you need to cancel or reschedule your appointment, we ask that you call or email us 24 hours in advance to avoid the last minute cancelation/rescheduling fee (50% of the appointment's total).
@@ -13,7 +16,7 @@ function AppointmentPolicy() {
 
                 <h1>No-show</h1>
                 <p>
-                    We want to provide the best service for you, and to do so, we make sure we to allot enough time for your appointment. To be fair to our technicians that prepared for the appointment and other customers that would've wanted the appointment, we have a "no-show" fee (100% of the appointment's total).
+                We want to provide the best service for you, and to do so, we make sure we allot enough time for your appointment. To be fair to our technicians that prepared for the appointment and other customers that would've wanted the appointment, we have a "no-show" fee (100% of the appointment's total).
                 </p>
 
                 <h1>Contact</h1>

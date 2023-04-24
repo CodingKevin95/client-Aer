@@ -1,4 +1,49 @@
 .App {
   text-align: center;
   font-family: monospace;
+  color: black;
+  /* background-image: url("./assets/white-paint.jpg");
+  background-image: url("./assets/bamboo.png");
+  background-repeat: no-repeat;
+  z-index: -10; */
+}
+
+.mainBackGround {
+  /* z-index: -1000;
+  position: fixed;
+  height: 120vh;
+  left: 30%;
+  bottom: -10%;
+  opacity: .3; */
+}
+
+.mainBackGround2 {
+  /* z-index: -1000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  /* .mainBackGround {
+    z-index: -1000;
+    position: fixed;
+    height: 120vh;
+    left: -5%;
+    opacity: .2;
+  } */
+}
+
+@media screen and (max-width: 750px) {
+  /* .mainBackGround {
+    z-index: -1000;
+    position: fixed;
+    height: 120vh;
+    left: -50%;
+  } */
 }

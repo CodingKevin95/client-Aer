@@ -1,59 +1,107 @@
 .servicePage {
-    height: auto;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #a9e4f9; */
-    background-image: url("../assets/blue-paint.jpg");
-    padding-top: 5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 10%;
+    padding-bottom: 5rem;
+    font-family: 'Roboto Serif', serif;
+    /* background-color: rgb(159, 136, 112); */
+    background-color: rgb(179, 154, 128);
+}
+
+.serviceMenu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(179, 154, 128); */
+    width: 700px;
+}
+
+.serviceMenuO {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* background-color: rgb(179, 154, 128); */
+    width: 700px;
+}
+
+.serviceTitle {
+    font-size: 1.6rem;
+    width: auto;
+    margin: 0;
+    color: white;
+}
+
+.servicePhoto {
+    width: 40%;
+    /* height: 10%; */
+    padding: 5%;
+    max-width: 600px;
+}
+
+.leftServiceSide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: min-content;
+}
+
+.moreDetail {
+    color: white;
+}
+
+.topServiceSection {
+    width: 80%;
+    margin-bottom: 5%;
+    text-align: start;
+    color: white;
+}
+
+.line {
+    border-top: 1px white solid;
+}
+
+.serviceSectionTitle {
+    margin-top: 2%;
+    font-size: 1rem;
 }
 
 .serviceBtn {
     margin-top: 1.5rem;
-    font-family: monospace;
+    font-family: 'Roboto Serif', serif;
     background-color: transparent;
     padding: 1rem;
-    border: 4px solid rgba(0, 0, 0, 0.237);
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.238),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    10px 12.5px 10px rgba(0, 0, 0, 0.06),
-    15px 22.3px 17.9px rgba(0, 0, 0, 0.05),
-    25px 25px 50px rgba(0, 0, 0, 0.023),
-    30px 30px 100px rgba(0, 0, 0, 0.12);
-    color: rgb(0, 72, 114);
-    font-weight: bold;
-    font-size: 1rem;
+    background-color: transparent;
+    border: 1px white solid;
+    background-color: rgb(159, 136, 112);
+    font-size: .8em;
+    font-family: 'Roboto Serif', serif;
+    color: white;
+    border-radius: 20px;
+    padding: 10%;
     cursor: pointer;
-}
-
-.serviceBtn:hover {
-    /* background-image: url("../assets/blue-paint.jpg"); */
-    background: rgb(248, 248, 237);
+    margin-bottom: 5%;
+    width: 150px;
 }
 
 .detailsForBtn {
     margin-top: 1.5rem;
     width: 40%;
-    font-size: 1rem;
-    color: rgb(0, 72, 114);
-    letter-spacing: 1.5px;
+    font-size: .75rem;
+    color: black;
+    color: white;
 }
 
 .horizontalScroll {
     display: flex;
     height: auto;
     width: 75%;
-    border: 10px solid rgba(0, 0, 0, 0.237);
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.321),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    10px 12.5px 10px rgba(0, 0, 0, 0.06),
-    15px 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    25px 50px 80px rgba(0, 0, 0, 0.10);
 }
 
 .mainSlider {
@@ -63,25 +111,22 @@
 
 .pedicureBox {
     width: 25vw;
-    color: rgb(0, 72, 114);
+    color: black;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: start;
+    align-items: center;
     flex-direction: column;
-    /* background-color: rgba(0, 0, 0, 0.134); */
 }
 
 .priceTitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
     width: auto;
-    color: rgb(0, 72, 114);
-    border-bottom: 1px solid black;
     margin: 0;
-    margin-left: 1rem;
+    color: white;
 }
 
-.more-detail {
-    font-size: 1.10rem;
+.more-detail-section {
+    font-size: .75rem;
     font-weight: bold;
     margin-top: 10px;
     margin-left: 1rem;
@@ -89,27 +134,26 @@
     padding-bottom: 2rem;
 }
 
+.more-detail {
+    color: white;
+}
+
 .manicurePrice {
     margin: 0;
-    padding-left: 1rem;
-    font-size: 1.10rem;
-    color: rgb(0, 72, 114);
-    text-align: start;
+    text-align: center;
+    /* color: black; */
+    color: white;
 }
 
-.random {
-    /* margin: 0; */
-    padding: 0;
-}
-
-.big {
-    height: 100vh;
-    width: 100vw;
-    background-color: orange;
+.services-card{
+    margin-top: 1.35rem;
+    color: black;
+    font-size: .8em;
+    color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -117,14 +161,43 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 72, 114);
+    background-color: rgba(255, 255, 255, 0.123);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(0, 72, 114);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+
+    .serviceMenu {
+        /* flex-direction: column-reverse; */
+        padding-top: 10%;
+        padding-bottom: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .serviceMenuO {
+        /* flex-direction: column-reverse; */
+        /* padding-bottom: 10%; */
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+
+    .servicePhoto {
+        width: 60%;
+        padding: 0;
+    }
+
+    .servicePage {
+        padding-top: 30%;
+    }
+
     .mainSlider {
         flex-direction: column;
     }
@@ -134,17 +207,39 @@
     }
 
     .horizontalScroll {
-        display: flex;
-        /* border: solid black 1px; */
         overflow-y: scroll;
         overflow-x: hidden;
-        min-height: 300px;
-        max-height: 500px;
+        max-height: 50%;
+        flex-direction: column;
+        justify-content: start;
     }
 
-    .detailsForBtn {
-        width: 85%;
-        color: rgb(0, 72, 114);
-        letter-spacing: 1px;
+    .serviceList {
+        /* text-align: start; */
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .services-card{
+        margin-top: 1.35rem;
+        font-size: .7em;
+    }
+
+    .more-detail {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .topServiceSection {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
+    }
+
+    .serviceSectionTitle {
+        margin-top: 0;
+        margin-bottom: 2%;
     }
 }
